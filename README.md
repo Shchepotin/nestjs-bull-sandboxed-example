@@ -1,4 +1,4 @@
-# NestJS Bull Queues. Threaded (sandboxed) processing example
+# NestJS Bull queues. Example threaded (sandboxed) processing
 
 ## Install and run
 
