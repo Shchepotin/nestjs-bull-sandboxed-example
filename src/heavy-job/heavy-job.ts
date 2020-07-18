@@ -8,6 +8,4 @@ module.exports = async (job: Job) => {
   const heavyJobService = app.get(HeavyJobService);
   heavyJobService.doHeavyJob(job);
   app.close();
-
-  return Promise.resolve({});
 };
