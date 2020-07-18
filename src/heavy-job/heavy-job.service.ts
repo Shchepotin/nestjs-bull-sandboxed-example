@@ -5,7 +5,7 @@ import { Job } from 'bull';
 export class HeavyJobService {
   private readonly logger = new Logger(HeavyJobService.name);
 
-  async doHeavyJob(job: Job) {
+  async doHeavyJob(job: Job): Promise<void> {
     this.logger.debug(`Start some heavy job. Job ID ${job.id}...`);
     this.logger.debug(job.data);
     this.logger.debug(`Worker PID: ${process.pid}`);
